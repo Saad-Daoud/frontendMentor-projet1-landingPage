@@ -1,7 +1,7 @@
 .header{
-
+    
     nav{
-       padding: 24px; 
+       padding: 17.5px 24px; 
     }
     
     &__logo{    
@@ -29,12 +29,38 @@
 
     &__links{
 
+        
+        
         a {
             font-size: $font-small;
             color:$GrayishBlue;
+            transition: color 200ms ease-in-out ;
+            position: relative;
+
 
             &:not(:last-child){
                 margin-right: 1.875rem;
+            }
+
+            &:hover {
+                color: $DarkBlue;
+                &::after {
+                    opacity: 1;
+                    
+                }
+            }
+            
+            &::after {
+                position: absolute;
+                content: "";
+                background:linear-gradient(to right,$LimeGreen, $BrightCyan) ;
+                height: 5px;
+                width: 100%;
+                left: 0;
+                right: 0;
+                top: 42px;
+                opacity:0;
+                transition: opacity 200ms ease-in-out ;
             }
         }
 
