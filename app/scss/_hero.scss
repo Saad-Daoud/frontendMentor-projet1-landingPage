@@ -1,0 +1,43 @@
+.hero{
+    &__bg{
+                background: url('/images/bg-intro-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center 46%;
+        background-size: cover;
+        min-height: 17.5rem;
+        
+
+        &-img{
+        
+            background: url('/images/image-mockups.png');
+            background-repeat: no-repeat;
+            background-position: center 88%;
+            background-size: cover;
+            width: 92%;
+            margin: auto;
+            min-height: 17.5rem;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        h1{
+            margin: 0;
+            margin-top: 2.9375rem;
+            font-weight: 300;
+            font-size: 2.3125rem;
+            color: $DarkBlue;
+            line-height: 1.2432;
+            
+        }
+
+        p{
+            margin: 1rem auto;
+            line-height: 1.79;
+            font-size: $font-small
+        }
+        .button{
+            margin-top: 0.75rem;
+        }
+    }
+}
